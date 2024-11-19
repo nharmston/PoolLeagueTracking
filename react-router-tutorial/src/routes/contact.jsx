@@ -54,19 +54,16 @@ export default function Contact() {
           <Favorite contact={contact} />
         </h1>
 
-        {contact.twitter && (
+        {contact.teamName && (
           <p>
             <a
               target="_blank"
-              href={`https://twitter.com/${contact.twitter}`}
+              href={"https://hazelwoodcorp.com/wp-content/uploads/2024/11/grpool-24-1.pdf"}
             >
-              {contact.twitter}
+              {contact.teamName}
             </a>
           </p>
         )}
-
-        {contact.notes && <p>{contact.notes}</p>}
-
         <div>
           <Form action="edit">
             <button type="submit">Edit</button>

@@ -36,12 +36,12 @@ export default function EditContact() {
         />
       </p>
       <label>
-        <span>Twitter</span>
+        <span>Team</span>
         <input
           type="text"
-          name="twitter"
-          placeholder="@jack"
-          defaultValue={contact?.twitter}
+          name="teamName"
+          placeholder="Team Name"
+          defaultValue={contact?.teamName}
         />
       </label>
       <label>
@@ -52,14 +52,6 @@ export default function EditContact() {
           type="text"
           name="avatar"
           defaultValue={contact?.avatar}
-        />
-      </label>
-      <label>
-        <span>Notes</span>
-        <textarea
-          name="notes"
-          defaultValue={contact?.notes}
-          rows={6}
         />
       </label>
       <p>
