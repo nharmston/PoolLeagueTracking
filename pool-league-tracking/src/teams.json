@@ -1,0 +1,146 @@
+[
+    {
+      "leagueID": 100,
+      "icon": "perk-images/Styles/7200_Domination.png",
+      "name": "Grand Rapids",
+      "teams": [
+        {
+          "Harrys 2": [
+            {
+                "id": 1001,
+                "icon": ".assets/playericons/terryharmston.jpg",
+                "firstName": "Terry",
+                "lastName": "Harmston",
+                "role": "Primary",
+                "division": "A",
+                "stats": [
+                    {
+                    "games": 20,
+                    "avgpts": 8.25,
+                    "totalpts":165,
+                    "wins": 13,
+                    "consec": 8,
+                    "eob": 0,
+                    "ero": 2,
+                    "10-1": 1
+                    }
+                ]
+            },
+            {
+                "id": 1002,
+                "icon": "perk-images/Styles/Domination/Electrocute/Electrocute.png",
+                "firstName": "Steve",
+                "lastName": "Nelson",
+                "role": "Primary"
+            },
+            {
+                "id": 1003,
+                "icon": "perk-images/Styles/Domination/Electrocute/Electrocute.png",
+                "firstName": "Dan",
+                "lastName": "Dinnen",
+                "role": "Primary"
+            },
+            {
+                "id": 1004,
+                "icon": "perk-images/Styles/Domination/Electrocute/Electrocute.png",
+                "firstName": "Taylor",
+                "lastName": "Watland"
+                ,"role": "Primary"
+            },
+            {
+                "id": 1005,
+                "icon": "perk-images/Styles/Domination/Electrocute/Electrocute.png",
+                "firstName": "Scott",
+                "lastName": "Brazier",
+                "role": "Substitute"
+            },
+            {
+                "id": 1006,
+                "icon": "perk-images/Styles/Domination/Electrocute/Electrocute.png",
+                "firstName": "Mike",
+                "lastName": "Shaleen",
+                "role": "Substitute"
+            }
+          ]
+        },
+        {
+          "Locker Room": [
+            {
+                "id": 1011,
+                "icon": "perk-images/Styles/Domination/Electrocute/Electrocute.png",
+                "firstName": "Jason",
+                "lastName": "Savage",
+                "role": "Primary"
+            },
+            {
+                "id": 1012,
+                "icon": "perk-images/Styles/Domination/Electrocute/Electrocute.png",
+                "firstName": "Tony",
+                "lastName": "Marcella",
+                "role": "Primary"
+            },
+            {
+                "id": 1013,
+                "icon": "perk-images/Styles/Domination/Electrocute/Electrocute.png",
+                "firstName": "Sonny",
+                "lastName": "Simunovich",
+                "role": "Primary"
+            },
+            {
+                "id": 1014,
+                "icon": "perk-images/Styles/Domination/Electrocute/Electrocute.png",
+                "firstName": "Sim",
+                "lastName": "Simunovich",
+                "role": "Primary"
+            },
+            {
+                "id": 1015,
+                "icon": "perk-images/Styles/Domination/Electrocute/Electrocute.png",
+                "firstName": "John",
+                "lastName": "Doe",
+                "role": "Substitute"
+            }
+          ]
+        }
+      ]
+    },
+        {
+        "leagueID": 200,
+        "icon": "perk-images/Styles/7200_Domination.png",
+        "name": "Hibbing",
+        "teams": [
+          {
+            "The Thirsty Mules": [
+              {
+                  "id": 2001,
+                  "icon": "perk-images/Styles/Domination/Electrocute/Electrocute.png",
+                  "firstName": "Bill",
+                  "lastName": "Heisel",
+                  "role": "Primary"
+              },
+              {
+                  "id": 2002,
+                  "icon": "perk-images/Styles/Domination/Electrocute/Electrocute.png",
+                  "firstName": "Garrett",
+                  "lastName": "Paine",
+                  "role": "Primary"
+              },
+              {
+                  "id": 2003,
+                  "icon": "perk-images/Styles/Domination/Electrocute/Electrocute.png",
+                  "firstName": "Mike",
+                  "lastName": "McLeod",
+                  "role": "Primary"
+              },
+              {
+                  "id": 2004,
+                  "icon": "perk-images/Styles/Domination/Electrocute/Electrocute.png",
+                  "firstName": "Travis",
+                  "lastName": "Lindfors"
+                  ,"role": "Primary"
+              }
+            ]
+            }
+        ]
+    }
+]
