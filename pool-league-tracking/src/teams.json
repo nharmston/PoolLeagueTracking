@@ -5,7 +5,8 @@
     "name": "Grand Rapids",
     "teams": [
       {
-        "Harrys 2": [
+        "teamName": "Harrys 2",
+        "players": [
           {
             "id": 1001,
             "icon": ".assets/playericons/terryharmston.jpg",
@@ -129,7 +130,8 @@
         ]
       },
       {
-        "Locker Room": [
+        "teamName": "Locker Room",
+        "players": [
           {
             "id": 1011,
             "icon": "perk-images/Styles/Domination/Electrocute/Electrocute.png",
@@ -175,7 +177,8 @@
     "name": "Hibbing",
     "teams": [
       {
-        "The Thirsty Mules": [
+        "teamName": "The Thirsty Mules",
+        "players": [
           {
             "id": 2001,
             "icon": "perk-images/Styles/Domination/Electrocute/Electrocute.png",

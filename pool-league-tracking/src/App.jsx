@@ -5,82 +5,50 @@ import './App.css'
 import leagueData from "./teams.json";
 import './index.css'
 
-const PlayerTable = () => {
-  const extractPlayers = (data) => {
-    const players = [];
+let leagues = [];
+let teams = [];
+let players = [];
 
-    data.forEach((league) => {
-      if (!league.teams || !Array.isArray(league.teams)) return;
-
-      league.teams.forEach((team) => {
-        for (const teamName in team) {
-          if (!Array.isArray(team[teamName])) continue;
-
-          team[teamName].forEach((player) => {
-            if (!player.stats || !Array.isArray(player.stats)) return;
-
-            player.stats.forEach((stat) => {
-              players.push({
-                name: `${player.firstName} ${player.lastName}`,
-                ...stat,
-              });
-            });
-          });
-        }
-      });
-    });
-
-    return players;
-  };
-
-  const players = extractPlayers(leagueData);
-
-  return (
-    <table>
-      <thead>
-        <tr>
-          {["Name", "Games", "Avg Pts", "Total Pts", "Wins", "Consec", "EOB", "ERO", "10-1"].map(
-            (header) => (
-              <th
-                key={header}
-                style={{
-                  border: "1px solid #ddd",
-                  padding: "8px",
-                  backgroundColor: "#242424",
-                  textAlign: "center",
-                }}
-              >
-                {header}
-              </th>
-            )
-          )}
-        </tr>
-      </thead>
-      <tbody>
-        {players.map((player, index) => (
-          <tr key={index} className="table">
-            <td style={{ border: "1px solid #ddd", padding: "8px" }}>{player.name}</td>
-            <td style={{ border: "1px solid #ddd", padding: "8px" }}>{player.games}</td>
-            <td style={{ border: "1px solid #ddd", padding: "8px" }}>{player.avgpts}</td>
-            <td style={{ border: "1px solid #ddd", padding: "8px" }}>{player.totalpts}</td>
-            <td style={{ border: "1px solid #ddd", padding: "8px" }}>{player.wins}</td>
-            <td style={{ border: "1px solid #ddd", padding: "8px" }}>{player.consec}</td>
-            <td style={{ border: "1px solid #ddd", padding: "8px" }}>{player.eob}</td>
-            <td style={{ border: "1px solid #ddd", padding: "8px" }}>{player.ero}</td>
-            <td style={{ border: "1px solid #ddd", padding: "8px" }}>{player["10-1"]}</td>
-          </tr>
-        ))}
-      </tbody>
-    </table>
-  );
+const processPlayers = (teamPlayers) => {
+  return teamPlayers.map(player => {
+    const playerData = {
+      id: player.id,
+      name: `${player.firstName} ${player.lastName}`,
+    };
+    players.push(playerData);
+    return playerData
+});
 };
+
+const processTeams = (leagueTeams) => {
+  return leagueTeams.map(team => {
+    const teamData = {
+      teamName: team.teamName,
+      players: processPlayers(team.players),
+    };
+    teams.push(teamData);
+    return teamData;
+  });
+};
+
+const processLeague = (leagueData) => {
+  return leagueData.map(league => {
+    const leagueData = {
+      leagueName: league.name,
+      teams: processTeams(league.teams),
+    };
+    leagues.push(leagueData);
+    return leagueData;
+  });
+};
+
+processLeague(leagueData);
+console.log("Leagues:", leagues);
+console.log("Teams:", teams);
+console.log("Players:", players);
 
 function App() {
   const [teamNameInput, setTeamName] = useState("");
-
-  function selectTeam(team) {
-    console.log(team);
-  }
 
   return (
     <>
@@ -121,9 +89,7 @@ function App() {
         </form>
       </div>
       <h2>Player Stats</h2>
-      <div>
-        <PlayerTable />
-      </div>
+
     </>
   );
 }
