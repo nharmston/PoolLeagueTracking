@@ -1,0 +1,1073 @@
+[
+  {
+    "leagueID": 100,
+    "icon": "perk-images/Styles/7200_Domination.png",
+    "name": "Grand Rapids",
+    "teams": [
+        {
+            "teamName": "BLACKBERRY OLDTIMERS",
+            "division": "A",
+            "players": [
+                {
+                    "id": 1001,
+                    "icon": "path/to/icon",
+                    "firstName": "Rick",
+                    "lastName": "Rick King",
+                    "role": "Primary",
+                    "stats": [
+                        {
+                            "games": 24,
+                            "avgpts": 8.08,
+                            "totalpts": 194,
+                            "wins": 13,
+                            "consec": 5,
+                            "eob": 0,
+                            "ero": 1,
+                            "10-1": 0
+                        }
+                    ]
+                },
+                {
+                    "id": 1002,
+                    "icon": "path/to/icon",
+                    "firstName": "Jason",
+                    "lastName": "Jason Empey",
+                    "role": "Primary",
+                    "stats": [
+                        {
+                            "games": 24,
+                            "avgpts": 7.96,
+                            "totalpts": 191,
+                            "wins": 14,
+                            "consec": 5,
+                            "eob": 0,
+                            "ero": 0,
+                            "10-1": 1
+                        }
+                    ]
+                },
+                {
+                    "id": 1003,
+                    "icon": "path/to/icon",
+                    "firstName": "Larry",
+                    "lastName": "Larry Felix",
+                    "role": "Primary",
+                    "stats": [
+                        {
+                            "games": 16,
+                            "avgpts": 7.88,
+                            "totalpts": 126,
+                            "wins": 8,
+                            "consec": 2,
+                            "eob": 0,
+                            "ero": 0,
+                            "10-1": 0
+                        }
+                    ]
+                },
+                {
+                    "id": 1004,
+                    "icon": "path/to/icon",
+                    "firstName": "ERIC",
+                    "lastName": "ERIC LOCKEN",
+                    "role": "Primary",
+                    "stats": [
+                        {
+                            "games": 20,
+                            "avgpts": 7.75,
+                            "totalpts": 155,
+                            "wins": 11,
+                            "consec": 3,
+                            "eob": 0,
+                            "ero": 0,
+                            "10-1": 0
+                        }
+                    ]
+                },
+                {
+                    "id": 1005,
+                    "icon": "path/to/icon",
+                    "firstName": "Craig",
+                    "lastName": "Craig King",
+                    "role": "Primary",
+                    "stats": [
+                        {
+                            "games": 12,
+                            "avgpts": 7.33,
+                            "totalpts": 88,
+                            "wins": 4,
+                            "consec": 2,
+                            "eob": 0,
+                            "ero": 0,
+                            "10-1": 0
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "teamName": "CALUMET SALOON 1",
+            "division": "A",
+            "players": [
+                {
+                    "id": 1006,
+                    "icon": "path/to/icon",
+                    "firstName": "Mike",
+                    "lastName": "Mike May",
+                    "role": "Primary",
+                    "stats": [
+                        {
+                            "games": 4,
+                            "avgpts": 9,
+                            "totalpts": 36,
+                            "wins": 3,
+                            "consec": 3,
+                            "eob": 0,
+                            "ero": 0,
+                            "10-1": 0
+                        }
+                    ]
+                },
+                {
+                    "id": 1007,
+                    "icon": "path/to/icon",
+                    "firstName": "Steve",
+                    "lastName": "Steve Lindell",
+                    "role": "Primary",
+                    "stats": [
+                        {
+                            "games": 12,
+                            "avgpts": 8.25,
+                            "totalpts": 99,
+                            "wins": 8,
+                            "consec": 3,
+                            "eob": 0,
+                            "ero": 1,
+                            "10-1": 1
+                        }
+                    ]
+                },
+                {
+                    "id": 1008,
+                    "icon": "path/to/icon",
+                    "firstName": "Bob",
+                    "lastName": "Bob Warren",
+                    "role": "Primary",
+                    "stats": [
+                        {
+                            "games": 24,
+                            "avgpts": 7.88,
+                            "totalpts": 189,
+                            "wins": 12,
+                            "consec": 3,
+                            "eob": 0,
+                            "ero": 3,
+                            "10-1": 2
+                        }
+                    ]
+                },
+                {
+                    "id": 1009,
+                    "icon": "path/to/icon",
+                    "firstName": "Mike",
+                    "lastName": "Mike Bibich",
+                    "role": "Primary",
+                    "stats": [
+                        {
+                            "games": 24,
+                            "avgpts": 7.42,
+                            "totalpts": 178,
+                            "wins": 11,
+                            "consec": 4,
+                            "eob": 0,
+                            "ero": 0,
+                            "10-1": 0
+                        }
+                    ]
+                },
+                {
+                    "id": 1010,
+                    "icon": "path/to/icon",
+                    "firstName": "Patrick",
+                    "lastName": "Patrick Hiltunen",
+                    "role": "Primary",
+                    "stats": [
+                        {
+                            "games": 24,
+                            "avgpts": 7.33,
+                            "totalpts": 176,
+                            "wins": 10,
+                            "consec": 3,
+                            "eob": 0,
+                            "ero": 1,
+                            "10-1": 1
+                        }
+                    ]
+                },
+                {
+                    "id": 1011,
+                    "icon": "path/to/icon",
+                    "firstName": "Ron",
+                    "lastName": "Ron Colwell",
+                    "role": "Primary",
+                    "stats": [
+                        {
+                            "games": 24,
+                            "avgpts": 6.88,
+                            "totalpts": 165,
+                            "wins": 8,
+                            "consec": 2,
+                            "eob": 0,
+                            "ero": 0,
+                            "10-1": 0
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "teamName": "HARRYS 1",
+            "division": "A",
+            "players": [
+                {
+                    "id": 1012,
+                    "icon": "path/to/icon",
+                    "firstName": "Norm",
+                    "lastName": "Norm Koran",
+                    "role": "Primary",
+                    "stats": [
+                        {
+                            "games": 24,
+                            "avgpts": 8.46,
+                            "totalpts": 203,
+                            "wins": 16,
+                            "consec": 6,
+                            "eob": 0,
+                            "ero": 0,
+                            "10-1": 1
+                        }
+                    ]
+                },
+                {
+                    "id": 1013,
+                    "icon": "path/to/icon",
+                    "firstName": "Doug",
+                    "lastName": "Doug McNeil",
+                    "role": "Primary",
+                    "stats": [
+                        {
+                            "games": 8,
+                            "avgpts": 8.38,
+                            "totalpts": 67,
+                            "wins": 5,
+                            "consec": 3,
+                            "eob": 0,
+                            "ero": 0,
+                            "10-1": 0
+                        }
+                    ]
+                },
+                {
+                    "id": 1014,
+                    "icon": "path/to/icon",
+                    "firstName": "Dale",
+                    "lastName": "Dale Hagen",
+                    "role": "Primary",
+                    "stats": [
+                        {
+                            "games": 20,
+                            "avgpts": 7.85,
+                            "totalpts": 157,
+                            "wins": 10,
+                            "consec": 5,
+                            "eob": 0,
+                            "ero": 1,
+                            "10-1": 1
+                        }
+                    ]
+                },
+                {
+                    "id": 1015,
+                    "icon": "path/to/icon",
+                    "firstName": "Craig",
+                    "lastName": "Craig McNeil",
+                    "role": "Primary",
+                    "stats": [
+                        {
+                            "games": 20,
+                            "avgpts": 7.15,
+                            "totalpts": 143,
+                            "wins": 8,
+                            "consec": 3,
+                            "eob": 0,
+                            "ero": 0,
+                            "10-1": 0
+                        }
+                    ]
+                },
+                {
+                    "id": 1016,
+                    "icon": "path/to/icon",
+                    "firstName": "Al",
+                    "lastName": "Al Hilton",
+                    "role": "Primary",
+                    "stats": [
+                        {
+                            "games": 24,
+                            "avgpts": 6.96,
+                            "totalpts": 167,
+                            "wins": 10,
+                            "consec": 3,
+                            "eob": 0,
+                            "ero": 1,
+                            "10-1": 1
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "teamName": "HARRYS 2",
+            "division": "A",
+            "players": [
+                {
+                    "id": 1017,
+                    "icon": "path/to/icon",
+                    "firstName": "Mike",
+                    "lastName": "Mike Shaleen",
+                    "role": "Primary",
+                    "stats": [
+                        {
+                            "games": 8,
+                            "avgpts": 9,
+                            "totalpts": 72,
+                            "wins": 6,
+                            "consec": 4,
+                            "eob": 0,
+                            "ero": 0,
+                            "10-1": 0
+                        }
+                    ]
+                },
+                {
+                    "id": 1018,
+                    "icon": "path/to/icon",
+                    "firstName": "Steve",
+                    "lastName": "Steve Nelson",
+                    "role": "Primary",
+                    "stats": [
+                        {
+                            "games": 24,
+                            "avgpts": 8.67,
+                            "totalpts": 208,
+                            "wins": 17,
+                            "consec": 4,
+                            "eob": 0,
+                            "ero": 3,
+                            "10-1": 2
+                        }
+                    ]
+                },
+                {
+                    "id": 1019,
+                    "icon": "path/to/icon",
+                    "firstName": "Scott",
+                    "lastName": "Scott Brazier",
+                    "role": "Primary",
+                    "stats": [
+                        {
+                            "games": 8,
+                            "avgpts": 8.5,
+                            "totalpts": 68,
+                            "wins": 6,
+                            "consec": 6,
+                            "eob": 0,
+                            "ero": 1,
+                            "10-1": 1
+                        }
+                    ]
+                },
+                {
+                    "id": 1020,
+                    "icon": "path/to/icon",
+                    "firstName": "Terry",
+                    "lastName": "Terry Harmston",
+                    "role": "Primary",
+                    "stats": [
+                        {
+                            "games": 20,
+                            "avgpts": 8.25,
+                            "totalpts": 165,
+                            "wins": 13,
+                            "consec": 8,
+                            "eob": 0,
+                            "ero": 2,
+                            "10-1": 1
+                        }
+                    ]
+                },
+                {
+                    "id": 1021,
+                    "icon": "path/to/icon",
+                    "firstName": "Dan",
+                    "lastName": "Dan Dinnen",
+                    "role": "Primary",
+                    "stats": [
+                        {
+                            "games": 20,
+                            "avgpts": 7.35,
+                            "totalpts": 147,
+                            "wins": 10,
+                            "consec": 2,
+                            "eob": 0,
+                            "ero": 2,
+                            "10-1": 1
+                        }
+                    ]
+                },
+                {
+                    "id": 1022,
+                    "icon": "path/to/icon",
+                    "firstName": "TAYLOR",
+                    "lastName": "TAYLOR WATLAND",
+                    "role": "Primary",
+                    "stats": [
+                        {
+                            "games": 16,
+                            "avgpts": 5.13,
+                            "totalpts": 82,
+                            "wins": 2,
+                            "consec": 1,
+                            "eob": 0,
+                            "ero": 0,
+                            "10-1": 0
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "teamName": "LOCKER ROOM",
+            "division": "A",
+            "players": [
+                {
+                    "id": 1023,
+                    "icon": "path/to/icon",
+                    "firstName": "Sim",
+                    "lastName": "Sim Simunovich",
+                    "role": "Primary",
+                    "stats": [
+                        {
+                            "games": 24,
+                            "avgpts": 8.17,
+                            "totalpts": 196,
+                            "wins": 13,
+                            "consec": 5,
+                            "eob": 0,
+                            "ero": 0,
+                            "10-1": 0
+                        }
+                    ]
+                },
+                {
+                    "id": 1024,
+                    "icon": "path/to/icon",
+                    "firstName": "TONY",
+                    "lastName": "TONY MARCELLA",
+                    "role": "Primary",
+                    "stats": [
+                        {
+                            "games": 24,
+                            "avgpts": 8.08,
+                            "totalpts": 194,
+                            "wins": 14,
+                            "consec": 4,
+                            "eob": 0,
+                            "ero": 0,
+                            "10-1": 0
+                        }
+                    ]
+                },
+                {
+                    "id": 1025,
+                    "icon": "path/to/icon",
+                    "firstName": "Sonny",
+                    "lastName": "Sonny Simunovich",
+                    "role": "Primary",
+                    "stats": [
+                        {
+                            "games": 20,
+                            "avgpts": 8,
+                            "totalpts": 160,
+                            "wins": 11,
+                            "consec": 3,
+                            "eob": 0,
+                            "ero": 0,
+                            "10-1": 0
+                        }
+                    ]
+                },
+                {
+                    "id": 1026,
+                    "icon": "path/to/icon",
+                    "firstName": "Jason",
+                    "lastName": "Jason Savage",
+                    "role": "Primary",
+                    "stats": [
+                        {
+                            "games": 20,
+                            "avgpts": 7.35,
+                            "totalpts": 147,
+                            "wins": 11,
+                            "consec": 6,
+                            "eob": 0,
+                            "ero": 0,
+                            "10-1": 0
+                        }
+                    ]
+                },
+                {
+                    "id": 1027,
+                    "icon": "path/to/icon",
+                    "firstName": "Covid",
+                    "lastName": "Covid One",
+                    "role": "Primary",
+                    "stats": [
+                        {
+                            "games": 4,
+                            "avgpts": 6.75,
+                            "totalpts": 27,
+                            "wins": 2,
+                            "consec": 2,
+                            "eob": 0,
+                            "ero": 0,
+                            "10-1": 0
+                        }
+                    ]
+                },
+                {
+                    "id": 1028,
+                    "icon": "path/to/icon",
+                    "firstName": "Greg",
+                    "lastName": "Greg Lease",
+                    "role": "Primary",
+                    "stats": [
+                        {
+                            "games": 4,
+                            "avgpts": 6,
+                            "totalpts": 24,
+                            "wins": 1,
+                            "consec": 1,
+                            "eob": 0,
+                            "ero": 0,
+                            "10-1": 0
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "teamName": "MOOSE 1",
+            "division": "A",
+            "players": [
+                {
+                    "id": 1029,
+                    "icon": "path/to/icon",
+                    "firstName": "Brian",
+                    "lastName": "Brian Warren",
+                    "role": "Primary",
+                    "stats": [
+                        {
+                            "games": 8,
+                            "avgpts": 8.5,
+                            "totalpts": 68,
+                            "wins": 5,
+                            "consec": 2,
+                            "eob": 0,
+                            "ero": 1,
+                            "10-1": 0
+                        }
+                    ]
+                },
+                {
+                    "id": 1030,
+                    "icon": "path/to/icon",
+                    "firstName": "Bob",
+                    "lastName": "Bob Rother",
+                    "role": "Primary",
+                    "stats": [
+                        {
+                            "games": 24,
+                            "avgpts": 8.42,
+                            "totalpts": 202,
+                            "wins": 15,
+                            "consec": 5,
+                            "eob": 0,
+                            "ero": 2,
+                            "10-1": 2
+                        }
+                    ]
+                },
+                {
+                    "id": 1031,
+                    "icon": "path/to/icon",
+                    "firstName": "Rich",
+                    "lastName": "Rich Chesness",
+                    "role": "Primary",
+                    "stats": [
+                        {
+                            "games": 16,
+                            "avgpts": 7.5,
+                            "totalpts": 120,
+                            "wins": 8,
+                            "consec": 3,
+                            "eob": 0,
+                            "ero": 1,
+                            "10-1": 0
+                        }
+                    ]
+                },
+                {
+                    "id": 1032,
+                    "icon": "path/to/icon",
+                    "firstName": "Don",
+                    "lastName": "Don Schleicher",
+                    "role": "Primary",
+                    "stats": [
+                        {
+                            "games": 16,
+                            "avgpts": 7.13,
+                            "totalpts": 114,
+                            "wins": 8,
+                            "consec": 3,
+                            "eob": 0,
+                            "ero": 0,
+                            "10-1": 0
+                        }
+                    ]
+                },
+                {
+                    "id": 1033,
+                    "icon": "path/to/icon",
+                    "firstName": "Darryl",
+                    "lastName": "Darryl Bunes",
+                    "role": "Primary",
+                    "stats": [
+                        {
+                            "games": 16,
+                            "avgpts": 6.88,
+                            "totalpts": 110,
+                            "wins": 5,
+                            "consec": 1,
+                            "eob": 0,
+                            "ero": 0,
+                            "10-1": 0
+                        }
+                    ]
+                },
+                {
+                    "id": 1034,
+                    "icon": "path/to/icon",
+                    "firstName": "Doug",
+                    "lastName": "Doug Johnson",
+                    "role": "Primary",
+                    "stats": [
+                        {
+                            "games": 12,
+                            "avgpts": 6.67,
+                            "totalpts": 80,
+                            "wins": 5,
+                            "consec": 2,
+                            "eob": 0,
+                            "ero": 0,
+                            "10-1": 0
+                        }
+                    ]
+                },
+                {
+                    "id": 1035,
+                    "icon": "path/to/icon",
+                    "firstName": "Tad",
+                    "lastName": "Tad Lofstrom",
+                    "role": "Primary",
+                    "stats": [
+                        {
+                            "games": 4,
+                            "avgpts": 5.5,
+                            "totalpts": 22,
+                            "wins": 1,
+                            "consec": 1,
+                            "eob": 0,
+                            "ero": 0,
+                            "10-1": 0
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "teamName": "SALOON RANGERS",
+            "division": "A",
+            "players": [
+                {
+                    "id": 1036,
+                    "icon": "path/to/icon",
+                    "firstName": "Chris",
+                    "lastName": "Chris Berglund",
+                    "role": "Primary",
+                    "stats": [
+                        {
+                            "games": 20,
+                            "avgpts": 8.1,
+                            "totalpts": 162,
+                            "wins": 10,
+                            "consec": 3,
+                            "eob": 0,
+                            "ero": 0,
+                            "10-1": 0
+                        }
+                    ]
+                },
+                {
+                    "id": 1037,
+                    "icon": "path/to/icon",
+                    "firstName": "Mike",
+                    "lastName": "Mike Delich",
+                    "role": "Primary",
+                    "stats": [
+                        {
+                            "games": 28,
+                            "avgpts": 7.25,
+                            "totalpts": 203,
+                            "wins": 14,
+                            "consec": 3,
+                            "eob": 0,
+                            "ero": 0,
+                            "10-1": 1
+                        }
+                    ]
+                },
+                {
+                    "id": 1038,
+                    "icon": "path/to/icon",
+                    "firstName": "Tom",
+                    "lastName": "Tom Glassmyer",
+                    "role": "Primary",
+                    "stats": [
+                        {
+                            "games": 12,
+                            "avgpts": 6.58,
+                            "totalpts": 79,
+                            "wins": 3,
+                            "consec": 1,
+                            "eob": 0,
+                            "ero": 0,
+                            "10-1": 0
+                        }
+                    ]
+                },
+                {
+                    "id": 1039,
+                    "icon": "path/to/icon",
+                    "firstName": "Jim",
+                    "lastName": "Jim Polo",
+                    "role": "Primary",
+                    "stats": [
+                        {
+                            "games": 24,
+                            "avgpts": 6.5,
+                            "totalpts": 156,
+                            "wins": 7,
+                            "consec": 2,
+                            "eob": 0,
+                            "ero": 0,
+                            "10-1": 0
+                        }
+                    ]
+                },
+                {
+                    "id": 1040,
+                    "icon": "path/to/icon",
+                    "firstName": "Chuck",
+                    "lastName": "Chuck Schafer",
+                    "role": "Primary",
+                    "stats": [
+                        {
+                            "games": 24,
+                            "avgpts": 6.25,
+                            "totalpts": 150,
+                            "wins": 9,
+                            "consec": 2,
+                            "eob": 0,
+                            "ero": 0,
+                            "10-1": 0
+                        }
+                    ]
+                },
+                {
+                    "id": 1041,
+                    "icon": "path/to/icon",
+                    "firstName": "Randy",
+                    "lastName": "Randy Stephens",
+                    "role": "Primary",
+                    "stats": [
+                        {
+                            "games": 4,
+                            "avgpts": 6,
+                            "totalpts": 24,
+                            "wins": 2,
+                            "consec": 2,
+                            "eob": 0,
+                            "ero": 1,
+                            "10-1": 1
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "teamName": "SALOON SHOOTERS",
+            "division": "A",
+            "players": [
+                {
+                    "id": 1042,
+                    "icon": "path/to/icon",
+                    "firstName": "LINDA",
+                    "lastName": "LINDA DICKINSON",
+                    "role": "Primary",
+                    "stats": [
+                        {
+                            "games": 16,
+                            "avgpts": 7.63,
+                            "totalpts": 122,
+                            "wins": 8,
+                            "consec": 5,
+                            "eob": 0,
+                            "ero": 1,
+                            "10-1": 0
+                        }
+                    ]
+                },
+                {
+                    "id": 1043,
+                    "icon": "path/to/icon",
+                    "firstName": "Bill",
+                    "lastName": "Bill Foster",
+                    "role": "Primary",
+                    "stats": [
+                        {
+                            "games": 20,
+                            "avgpts": 7.6,
+                            "totalpts": 152,
+                            "wins": 10,
+                            "consec": 4,
+                            "eob": 0,
+                            "ero": 0,
+                            "10-1": 0
+                        }
+                    ]
+                },
+                {
+                    "id": 1044,
+                    "icon": "path/to/icon",
+                    "firstName": "Kurt",
+                    "lastName": "Kurt Fallos",
+                    "role": "Primary",
+                    "stats": [
+                        {
+                            "games": 20,
+                            "avgpts": 7.55,
+                            "totalpts": 151,
+                            "wins": 12,
+                            "consec": 3,
+                            "eob": 0,
+                            "ero": 0,
+                            "10-1": 1
+                        }
+                    ]
+                },
+                {
+                    "id": 1045,
+                    "icon": "path/to/icon",
+                    "firstName": "Travis",
+                    "lastName": "Travis Lindfors",
+                    "role": "Primary",
+                    "stats": [
+                        {
+                            "games": 20,
+                            "avgpts": 7.45,
+                            "totalpts": 149,
+                            "wins": 10,
+                            "consec": 3,
+                            "eob": 0,
+                            "ero": 0,
+                            "10-1": 0
+                        }
+                    ]
+                },
+                {
+                    "id": 1046,
+                    "icon": "path/to/icon",
+                    "firstName": "Dean",
+                    "lastName": "Dean Broten",
+                    "role": "Primary",
+                    "stats": [
+                        {
+                            "games": 20,
+                            "avgpts": 4.95,
+                            "totalpts": 99,
+                            "wins": 3,
+                            "consec": 1,
+                            "eob": 0,
+                            "ero": 0,
+                            "10-1": 0
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "teamName": "TODDS TEAM",
+            "division": "A",
+            "players": [
+                {
+                    "id": 1047,
+                    "icon": "path/to/icon",
+                    "firstName": "Adam",
+                    "lastName": "Adam Godfrey",
+                    "role": "Primary",
+                    "stats": [
+                        {
+                            "games": 24,
+                            "avgpts": 8.33,
+                            "totalpts": 200,
+                            "wins": 16,
+                            "consec": 5,
+                            "eob": 0,
+                            "ero": 2,
+                            "10-1": 1
+                        }
+                    ]
+                },
+                {
+                    "id": 1048,
+                    "icon": "path/to/icon",
+                    "firstName": "Kevin",
+                    "lastName": "Kevin Godfrey",
+                    "role": "Primary",
+                    "stats": [
+                        {
+                            "games": 20,
+                            "avgpts": 8.2,
+                            "totalpts": 164,
+                            "wins": 13,
+                            "consec": 4,
+                            "eob": 0,
+                            "ero": 0,
+                            "10-1": 1
+                        }
+                    ]
+                },
+                {
+                    "id": 1049,
+                    "icon": "path/to/icon",
+                    "firstName": "Troy",
+                    "lastName": "Troy Burger",
+                    "role": "Primary",
+                    "stats": [
+                        {
+                            "games": 24,
+                            "avgpts": 8,
+                            "totalpts": 192,
+                            "wins": 15,
+                            "consec": 5,
+                            "eob": 0,
+                            "ero": 1,
+                            "10-1": 1
+                        }
+                    ]
+                },
+                {
+                    "id": 1050,
+                    "icon": "path/to/icon",
+                    "firstName": "TODD",
+                    "lastName": "TODD GODFREY",
+                    "role": "Primary",
+                    "stats": [
+                        {
+                            "games": 16,
+                            "avgpts": 7.5,
+                            "totalpts": 120,
+                            "wins": 7,
+                            "consec": 2,
+                            "eob": 0,
+                            "ero": 0,
+                            "10-1": 0
+                        }
+                    ]
+                },
+                {
+                    "id": 1051,
+                    "icon": "path/to/icon",
+                    "firstName": "Duane",
+                    "lastName": "Duane Gauthier",
+                    "role": "Primary",
+                    "stats": [
+                        {
+                            "games": 12,
+                            "avgpts": 6.42,
+                            "totalpts": 77,
+                            "wins": 3,
+                            "consec": 1,
+                            "eob": 0,
+                            "ero": 0,
+                            "10-1": 0
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+  },
+  {
+    "leagueID": 200,
+    "icon": "perk-images/Styles/7200_Domination.png",
+    "name": "Hibbing",
+    "teams": [
+      {
+        "teamName": "The Thirsty Mules",
+        "division": "A",
+        "players": [
+          {
+            "id": 2001,
+            "icon": "perk-images/Styles/Domination/Electrocute/Electrocute.png",
+            "firstName": "Bill",
+            "lastName": "Heisel",
+            "role": "Primary"
+          },
+          {
+            "id": 2002,
+            "icon": "perk-images/Styles/Domination/Electrocute/Electrocute.png",
+            "firstName": "Garrett",
+            "lastName": "Paine",
+            "role": "Primary"
+          },
+          {
+            "id": 2003,
+            "icon": "perk-images/Styles/Domination/Electrocute/Electrocute.png",
+            "firstName": "Mike",
+            "lastName": "McLeod",
+            "role": "Primary"
+          },
+          {
+            "id": 2004,
+            "icon": "perk-images/Styles/Domination/Electrocute/Electrocute.png",
+            "firstName": "Travis",
+            "lastName": "Lindfors",
+            "role": "Primary"
+          }
+        ]
+      }
+    ]
+  }
+]

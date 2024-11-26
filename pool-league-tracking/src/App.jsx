@@ -2,14 +2,14 @@ import React, { useState } from 'react'
 import grLogo from './assets/GrandRapids.png'
 import hLogo from './assets/Hibbing.png'
 import './App.css'
-import leagueData from "./teams.json";
+import leagueData from "./leagueData.json";
 import './index.css'
 
 let leagues = [];
 let teams = [];
 let players = [];
 
-const processPlayers = (teamPlayers) => {
+/*const parsePlayers = (teamPlayers) => {
   return teamPlayers.map(player => {
     const playerData = {
       id: player.id,
@@ -20,36 +20,51 @@ const processPlayers = (teamPlayers) => {
 });
 };
 
-const processTeams = (leagueTeams) => {
+const parseTeams = (leagueTeams) => {
   return leagueTeams.map(team => {
     const teamData = {
       teamName: team.teamName,
-      players: processPlayers(team.players),
+      players: parsePlayers(team.players),
     };
     teams.push(teamData);
     return teamData;
   });
 };
 
-const processLeague = (leagueData) => {
+const parseLeague = (leagueData) => {
   return leagueData.map(league => {
     const leagueData = {
       leagueName: league.name,
-      teams: processTeams(league.teams),
+      teams: parseTeams(league.teams),
     };
     leagues.push(leagueData);
     return leagueData;
   });
 };
 
-processLeague(leagueData);
+parseLeague(leagueData);
 console.log("Leagues:", leagues);
 console.log("Teams:", teams);
 console.log("Players:", players);
+*/
+
+function extractLeagueNames(leagues) {
+  const leagueNames = leagues.map (({ name }) => name);
+  console.log("League Names", leagueNames)
+  return leagueNames;
+}
+
+function findTeamsByLeagueName(leagues, selectLeague) {
+  const filteredLeagues = leagues.filter (league => league.name == selectLeague)
+  const filteredTeamNames = filteredLeagues.flatMap(league => league.teams.map(({ teamName }) => teamName));
+console.log("Team Names:", filteredTeamNames);
+return filteredTeamNames;
+}
+
+extractLeagueNames(leagueData);
 
 function App() {
-  const [teamNameInput, setTeamName] = useState("");
-
+  const [leagueNameInput, setLeagueName] = useState("");
   return (
     <>
       <div>
@@ -71,16 +86,17 @@ function App() {
         <form
           onSubmit={(e) => {
             e.preventDefault();
-            selectTeam(teamNameInput);
+            console.log(leagueNameInput)
+            findTeamsByLeagueName(leagueData, leagueNameInput);
           }}
         >
           <input
             className="rounded p-1 bg-secondary text-white"
             type="text"
             onChange={(e) => {
-              setTeamName(e.target.value);
+              setLeagueName(e.target.value);
             }}
-            placeholder="Enter Team Name"
+            placeholder="Enter League Name"
           />
           <input
             className="rounded bg-secondary m-1 p-1 hover:bg-green-100 hover:text-secondary text-slate-400"
