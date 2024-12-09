@@ -12,7 +12,7 @@
                     "id": 1001,
                     "icon": "path/to/icon",
                     "firstName": "Rick",
-                    "lastName": "Rick King",
+                    "lastName": "King",
                     "role": "Primary",
                     "stats": [
                         {
@@ -31,7 +31,7 @@
                     "id": 1002,
                     "icon": "path/to/icon",
                     "firstName": "Jason",
-                    "lastName": "Jason Empey",
+                    "lastName": "Empey",
                     "role": "Primary",
                     "stats": [
                         {
@@ -50,7 +50,7 @@
                     "id": 1003,
                     "icon": "path/to/icon",
                     "firstName": "Larry",
-                    "lastName": "Larry Felix",
+                    "lastName": "Felix",
                     "role": "Primary",
                     "stats": [
                         {
@@ -69,7 +69,7 @@
                     "id": 1004,
                     "icon": "path/to/icon",
                     "firstName": "ERIC",
-                    "lastName": "ERIC LOCKEN",
+                    "lastName": "LOCKEN",
                     "role": "Primary",
                     "stats": [
                         {
@@ -88,7 +88,7 @@
                     "id": 1005,
                     "icon": "path/to/icon",
                     "firstName": "Craig",
-                    "lastName": "Craig King",
+                    "lastName": "King",
                     "role": "Primary",
                     "stats": [
                         {
@@ -113,7 +113,7 @@
                     "id": 1006,
                     "icon": "path/to/icon",
                     "firstName": "Mike",
-                    "lastName": "Mike May",
+                    "lastName": "May",
                     "role": "Primary",
                     "stats": [
                         {
@@ -132,7 +132,7 @@
                     "id": 1007,
                     "icon": "path/to/icon",
                     "firstName": "Steve",
-                    "lastName": "Steve Lindell",
+                    "lastName": "Lindell",
                     "role": "Primary",
                     "stats": [
                         {
@@ -151,7 +151,7 @@
                     "id": 1008,
                     "icon": "path/to/icon",
                     "firstName": "Bob",
-                    "lastName": "Bob Warren",
+                    "lastName": "Warren",
                     "role": "Primary",
                     "stats": [
                         {
@@ -170,7 +170,7 @@
                     "id": 1009,
                     "icon": "path/to/icon",
                     "firstName": "Mike",
-                    "lastName": "Mike Bibich",
+                    "lastName": "Bibich",
                     "role": "Primary",
                     "stats": [
                         {
@@ -189,7 +189,7 @@
                     "id": 1010,
                     "icon": "path/to/icon",
                     "firstName": "Patrick",
-                    "lastName": "Patrick Hiltunen",
+                    "lastName": "Hiltunen",
                     "role": "Primary",
                     "stats": [
                         {
@@ -208,7 +208,7 @@
                     "id": 1011,
                     "icon": "path/to/icon",
                     "firstName": "Ron",
-                    "lastName": "Ron Colwell",
+                    "lastName": "Colwell",
                     "role": "Primary",
                     "stats": [
                         {
@@ -233,7 +233,7 @@
                     "id": 1012,
                     "icon": "path/to/icon",
                     "firstName": "Norm",
-                    "lastName": "Norm Koran",
+                    "lastName": "Koran",
                     "role": "Primary",
                     "stats": [
                         {
@@ -252,7 +252,7 @@
                     "id": 1013,
                     "icon": "path/to/icon",
                     "firstName": "Doug",
-                    "lastName": "Doug McNeil",
+                    "lastName": "McNeil",
                     "role": "Primary",
                     "stats": [
                         {
@@ -271,7 +271,7 @@
                     "id": 1014,
                     "icon": "path/to/icon",
                     "firstName": "Dale",
-                    "lastName": "Dale Hagen",
+                    "lastName": "Hagen",
                     "role": "Primary",
                     "stats": [
                         {
@@ -290,7 +290,7 @@
                     "id": 1015,
                     "icon": "path/to/icon",
                     "firstName": "Craig",
-                    "lastName": "Craig McNeil",
+                    "lastName": "McNeil",
                     "role": "Primary",
                     "stats": [
                         {
@@ -309,7 +309,7 @@
                     "id": 1016,
                     "icon": "path/to/icon",
                     "firstName": "Al",
-                    "lastName": "Al Hilton",
+                    "lastName": "Hilton",
                     "role": "Primary",
                     "stats": [
                         {
@@ -334,8 +334,8 @@
                     "id": 1017,
                     "icon": "path/to/icon",
                     "firstName": "Mike",
-                    "lastName": "Mike Shaleen",
-                    "role": "Primary",
+                    "lastName": "Shaleen",
+                    "role": "Substitute",
                     "stats": [
                         {
                             "games": 8,
@@ -353,7 +353,7 @@
                     "id": 1018,
                     "icon": "path/to/icon",
                     "firstName": "Steve",
-                    "lastName": "Steve Nelson",
+                    "lastName": "Nelson",
                     "role": "Primary",
                     "stats": [
                         {
@@ -372,8 +372,8 @@
                     "id": 1019,
                     "icon": "path/to/icon",
                     "firstName": "Scott",
-                    "lastName": "Scott Brazier",
-                    "role": "Primary",
+                    "lastName": "Brazier",
+                    "role": "Substitute",
                     "stats": [
                         {
                             "games": 8,
@@ -391,7 +391,7 @@
                     "id": 1020,
                     "icon": "path/to/icon",
                     "firstName": "Terry",
-                    "lastName": "Terry Harmston",
+                    "lastName": "Harmston",
                     "role": "Primary",
                     "stats": [
                         {
@@ -410,7 +410,7 @@
                     "id": 1021,
                     "icon": "path/to/icon",
                     "firstName": "Dan",
-                    "lastName": "Dan Dinnen",
+                    "lastName": "Dinnen",
                     "role": "Primary",
                     "stats": [
                         {
@@ -428,8 +428,8 @@
                 {
                     "id": 1022,
                     "icon": "path/to/icon",
-                    "firstName": "TAYLOR",
-                    "lastName": "TAYLOR WATLAND",
+                    "firstName": "Taylor",
+                    "lastName": "Watland",
                     "role": "Primary",
                     "stats": [
                         {
@@ -454,7 +454,7 @@
                     "id": 1023,
                     "icon": "path/to/icon",
                     "firstName": "Sim",
-                    "lastName": "Sim Simunovich",
+                    "lastName": "Simunovich",
                     "role": "Primary",
                     "stats": [
                         {
@@ -472,8 +472,8 @@
                 {
                     "id": 1024,
                     "icon": "path/to/icon",
-                    "firstName": "TONY",
-                    "lastName": "TONY MARCELLA",
+                    "firstName": "Tony",
+                    "lastName": "Marcella",
                     "role": "Primary",
                     "stats": [
                         {
@@ -492,7 +492,7 @@
                     "id": 1025,
                     "icon": "path/to/icon",
                     "firstName": "Sonny",
-                    "lastName": "Sonny Simunovich",
+                    "lastName": "Simunovich",
                     "role": "Primary",
                     "stats": [
                         {
@@ -511,7 +511,7 @@
                     "id": 1026,
                     "icon": "path/to/icon",
                     "firstName": "Jason",
-                    "lastName": "Jason Savage",
+                    "lastName": "Savage",
                     "role": "Primary",
                     "stats": [
                         {
@@ -530,7 +530,7 @@
                     "id": 1027,
                     "icon": "path/to/icon",
                     "firstName": "Covid",
-                    "lastName": "Covid One",
+                    "lastName": "One",
                     "role": "Primary",
                     "stats": [
                         {
@@ -549,7 +549,7 @@
                     "id": 1028,
                     "icon": "path/to/icon",
                     "firstName": "Greg",
-                    "lastName": "Greg Lease",
+                    "lastName": "Lease",
                     "role": "Primary",
                     "stats": [
                         {
@@ -574,7 +574,7 @@
                     "id": 1029,
                     "icon": "path/to/icon",
                     "firstName": "Brian",
-                    "lastName": "Brian Warren",
+                    "lastName": "Warren",
                     "role": "Primary",
                     "stats": [
                         {
@@ -593,7 +593,7 @@
                     "id": 1030,
                     "icon": "path/to/icon",
                     "firstName": "Bob",
-                    "lastName": "Bob Rother",
+                    "lastName": "Rother",
                     "role": "Primary",
                     "stats": [
                         {
@@ -612,7 +612,7 @@
                     "id": 1031,
                     "icon": "path/to/icon",
                     "firstName": "Rich",
-                    "lastName": "Rich Chesness",
+                    "lastName": "Chesness",
                     "role": "Primary",
                     "stats": [
                         {
@@ -631,7 +631,7 @@
                     "id": 1032,
                     "icon": "path/to/icon",
                     "firstName": "Don",
-                    "lastName": "Don Schleicher",
+                    "lastName": "Schleicher",
                     "role": "Primary",
                     "stats": [
                         {
@@ -650,7 +650,7 @@
                     "id": 1033,
                     "icon": "path/to/icon",
                     "firstName": "Darryl",
-                    "lastName": "Darryl Bunes",
+                    "lastName": "Bunes",
                     "role": "Primary",
                     "stats": [
                         {
@@ -669,7 +669,7 @@
                     "id": 1034,
                     "icon": "path/to/icon",
                     "firstName": "Doug",
-                    "lastName": "Doug Johnson",
+                    "lastName": "Johnson",
                     "role": "Primary",
                     "stats": [
                         {
@@ -688,7 +688,7 @@
                     "id": 1035,
                     "icon": "path/to/icon",
                     "firstName": "Tad",
-                    "lastName": "Tad Lofstrom",
+                    "lastName": "Lofstrom",
                     "role": "Primary",
                     "stats": [
                         {
@@ -713,7 +713,7 @@
                     "id": 1036,
                     "icon": "path/to/icon",
                     "firstName": "Chris",
-                    "lastName": "Chris Berglund",
+                    "lastName": "Berglund",
                     "role": "Primary",
                     "stats": [
                         {
@@ -732,7 +732,7 @@
                     "id": 1037,
                     "icon": "path/to/icon",
                     "firstName": "Mike",
-                    "lastName": "Mike Delich",
+                    "lastName": "Delich",
                     "role": "Primary",
                     "stats": [
                         {
@@ -751,7 +751,7 @@
                     "id": 1038,
                     "icon": "path/to/icon",
                     "firstName": "Tom",
-                    "lastName": "Tom Glassmyer",
+                    "lastName": "Glassmyer",
                     "role": "Primary",
                     "stats": [
                         {
@@ -770,7 +770,7 @@
                     "id": 1039,
                     "icon": "path/to/icon",
                     "firstName": "Jim",
-                    "lastName": "Jim Polo",
+                    "lastName": "Polo",
                     "role": "Primary",
                     "stats": [
                         {
@@ -789,7 +789,7 @@
                     "id": 1040,
                     "icon": "path/to/icon",
                     "firstName": "Chuck",
-                    "lastName": "Chuck Schafer",
+                    "lastName": "Schafer",
                     "role": "Primary",
                     "stats": [
                         {
@@ -808,7 +808,7 @@
                     "id": 1041,
                     "icon": "path/to/icon",
                     "firstName": "Randy",
-                    "lastName": "Randy Stephens",
+                    "lastName": "Stephens",
                     "role": "Primary",
                     "stats": [
                         {
@@ -832,8 +832,8 @@
                 {
                     "id": 1042,
                     "icon": "path/to/icon",
-                    "firstName": "LINDA",
-                    "lastName": "LINDA DICKINSON",
+                    "firstName": "Linda",
+                    "lastName": "Dickinson",
                     "role": "Primary",
                     "stats": [
                         {
@@ -852,7 +852,7 @@
                     "id": 1043,
                     "icon": "path/to/icon",
                     "firstName": "Bill",
-                    "lastName": "Bill Foster",
+                    "lastName": "Foster",
                     "role": "Primary",
                     "stats": [
                         {
@@ -871,7 +871,7 @@
                     "id": 1044,
                     "icon": "path/to/icon",
                     "firstName": "Kurt",
-                    "lastName": "Kurt Fallos",
+                    "lastName": "Fallos",
                     "role": "Primary",
                     "stats": [
                         {
@@ -890,7 +890,7 @@
                     "id": 1045,
                     "icon": "path/to/icon",
                     "firstName": "Travis",
-                    "lastName": "Travis Lindfors",
+                    "lastName": "Lindfors",
                     "role": "Primary",
                     "stats": [
                         {
@@ -909,7 +909,7 @@
                     "id": 1046,
                     "icon": "path/to/icon",
                     "firstName": "Dean",
-                    "lastName": "Dean Broten",
+                    "lastName": "Broten",
                     "role": "Primary",
                     "stats": [
                         {
@@ -934,7 +934,7 @@
                     "id": 1047,
                     "icon": "path/to/icon",
                     "firstName": "Adam",
-                    "lastName": "Adam Godfrey",
+                    "lastName": "Godfrey",
                     "role": "Primary",
                     "stats": [
                         {
@@ -953,7 +953,7 @@
                     "id": 1048,
                     "icon": "path/to/icon",
                     "firstName": "Kevin",
-                    "lastName": "Kevin Godfrey",
+                    "lastName": "Godfrey",
                     "role": "Primary",
                     "stats": [
                         {
@@ -972,7 +972,7 @@
                     "id": 1049,
                     "icon": "path/to/icon",
                     "firstName": "Troy",
-                    "lastName": "Troy Burger",
+                    "lastName": "Burger",
                     "role": "Primary",
                     "stats": [
                         {
@@ -990,8 +990,8 @@
                 {
                     "id": 1050,
                     "icon": "path/to/icon",
-                    "firstName": "TODD",
-                    "lastName": "TODD GODFREY",
+                    "firstName": "Todd",
+                    "lastName": "Godfrey",
                     "role": "Primary",
                     "stats": [
                         {
@@ -1010,7 +1010,7 @@
                     "id": 1051,
                     "icon": "path/to/icon",
                     "firstName": "Duane",
-                    "lastName": "Duane Gauthier",
+                    "lastName": "Gauthier",
                     "role": "Primary",
                     "stats": [
                         {

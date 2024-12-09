@@ -38,3 +38,85 @@
   background-color: "#242424";
   text-align: "center";
 }
+
+ul {
+  list-style-type: none; /* Removes the bullets */
+  padding: 0; /* Removes default padding */
+  margin: 0; /* Removes default margin */
+}
+
+li {
+  margin: 0.5rem auto;
+  padding: 0.5rem;
+  border: 1px solid #353535;
+  background: #353535;
+  border-radius: 5px; /* Optional: Add some rounding for better appearance */
+  width:  60%;
+}
+
+/* Container style */
+.container {
+  display: flex;
+  gap: 2rem;
+  justify-content: flex-start;
+  padding: 20px;
+}
+
+/* Teams list section */
+.teams-list {
+  flex: 1;
+  width: 400px;
+  overflow-y: auto;
+}
+
+.teams-list ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.teams-list li {
+  cursor: pointer;
+  padding: 0.5rem;
+  border: 1px solid #ddd;
+  margin-bottom: 0.5rem;
+  background-color: #242424;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.teams-list li:hover {
+  background-color: #505050;
+}
+
+/* Players table section */
+.players-table {
+  width: 500px;
+  overflow-x: auto;
+}
+
+.players-table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.players-table th,
+.players-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+}
+
+.players-table th {
+  background-color: #242424;
+}
+
+/* Player row hover effect */
+.players-table tr:hover {
+  background-color: #242424;
+}
+
+/* General styling for player rows */
+.players-table td {
+  background-color: #242424;
+}

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import data from "./leagueData.json"
 
-const dynamicTable = () => {
+export const dynamicTable = () => {
     const [tableData, setTableData] = useState([])
 
     useEffect(() => {
@@ -28,7 +28,7 @@ return (
         </thead>
         <tbody>
           {tableData.map((row) => (
-            <tr key={row.id}>
+            <tr key={row.teamName}>
               <td>{row.id}</td>
               <td>{row.name}</td>
               <td>{row.age}</td>
