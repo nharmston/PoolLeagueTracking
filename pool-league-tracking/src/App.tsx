@@ -1,21 +1,10 @@
 import React, { useState } from 'react'
+import { League, Team, Player } from './interfaces';
 import grLogo from './assets/GrandRapids.png'
 import hLogo from './assets/Hibbing.png'
 import './App.css'
 import leagueData from "./leagueData.json"
 import './index.css'
-
-interface Player {
-  id: number;
-  firstName: string;
-  lastName: string;
-  role: string;
-  stats: {
-    games: number;
-    avgpts: number;
-    totalpts: number;
-  }[];
-}
 
 
 function App() {
@@ -23,21 +12,25 @@ function App() {
   const [teams, setTeams] = useState<string[]>([]);
   const [players, setPlayers] = useState<Player[]>([]);
 
-  function extractLeagueNames(leagues: any[]) {
+  function extractLeagueNames(leagues: League[]): string[] {
     const leagueNames = leagues.map(({ name }) => name);
     console.log("League Names", leagueNames);
     return leagueNames;
   }
 
-  function findTeamsByLeagueName(leagues: any[], selectLeague: string) {
+  function findTeamsByLeagueName(leagues: League[], selectLeague: string): string[] {
     const filteredLeagues = leagues.filter((league) => league.name === selectLeague);
-    const filteredTeamNames = filteredLeagues.flatMap((league) => league.teams.map(({ teamName }) => teamName));
+    const filteredTeamNames = filteredLeagues.flatMap((league) =>
+      league.teams.map(({ teamName }) => teamName)
+    );
     console.log("Team Names:", filteredTeamNames);
     return filteredTeamNames;
   }
 
-  function findPlayersByTeamName(leagues: any[], selectedTeam: string) {
-    const filteredLeagues = leagues.filter((league) => league.teams.some((team) => team.teamName === selectedTeam));
+  function findPlayersByTeamName(leagues: League[], selectedTeam: string): Player[] {
+    const filteredLeagues = leagues.filter((league) =>
+      league.teams.some((team) => team.teamName === selectedTeam)
+    );
     const players = filteredLeagues.flatMap((league) =>
       league.teams
         .filter((team) => team.teamName === selectedTeam)
@@ -47,25 +40,27 @@ function App() {
     return players;
   }
 
-  const leagueNames = extractLeagueNames(leagueData);
+  const leagueNames = extractLeagueNames(leagueData as League[]);
 
   return (
     <>
       <h1>Pool League Standings</h1>
       <div className="card">
         <form
-          onSubmit={(e) => {
+          onSubmit={(e: React.FormEvent<HTMLFormElement>) => {
             e.preventDefault();
-            setTeams(findTeamsByLeagueName(leagueData, selectedLeague));
+            setTeams(findTeamsByLeagueName(leagueData as League[], selectedLeague));
           }}
         >
           <select
             className="rounded p-1 bg-secondary text-white"
             value={selectedLeague}
-            onChange={(e) => setSelectedLeague(e.target.value)}
+            onChange={(e: React.ChangeEvent<HTMLSelectElement>) =>
+              setSelectedLeague(e.target.value)
+            }
           >
             <option value="">Select a League</option>
-            {leagueNames.map((leagueName, index) => (
+            {leagueNames.map((leagueName: string, index: number) => (
               <option key={index} value={leagueName}>
                 {leagueName}
               </option>
@@ -84,10 +79,10 @@ function App() {
           <h2>Teams</h2>
           <ul>
             {teams.length > 0 ? (
-              teams.map((team, index) => (
+              teams.map((team: string, index: number) => (
                 <li
                   key={index}
-                  onClick={() => setPlayers(findPlayersByTeamName(leagueData, team))}
+                  onClick={() => setPlayers(findPlayersByTeamName(leagueData as League[], team))}
                 >
                   {team}
                 </li>
@@ -106,18 +101,21 @@ function App() {
                   <th>Name</th>
                   <th>Role</th>
                   <th>Games</th>
+                  <th>Wins</th>
                   <th>Avg Pts</th>
                   <th>Total Pts</th>
                 </tr>
               </thead>
               <tbody>
-                {players.map((player, index) => (
+                {players.map((player: Player, index: number) => (
                   <tr key={index}>
                     <td>{player.firstName} {player.lastName}</td>
                     <td>{player.role}</td>
-                    <td>{player.stats[0].games}</td>
-                    <td>{player.stats[0].avgpts}</td>
-                    <td>{player.stats[0].totalpts}</td>
+                    <td>{player.stats?.[0]?.games ?? 0}</td>
+                    <td>{player.stats?.[0]?.wins ?? 0}</td>
+                    <td>{player.stats?.[0]?.avgpts ?? 0}</td>
+                    <td>{player.stats?.[0]?.totalpts ?? 0}</td>
+
                   </tr>
                 ))}
               </tbody>
