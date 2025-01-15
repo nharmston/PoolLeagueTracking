@@ -112,7 +112,6 @@ function App() {
           </ul>
         </div>
         <div className="players-table">
-          <h2> </h2>
           <h2>Players</h2>
           {players.length > 0 ? (
             <table>
