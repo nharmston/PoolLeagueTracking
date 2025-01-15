@@ -40,6 +40,16 @@ function App() {
     return players;
   }
 
+  function findPlayersByLeague(leagues: League[], selectLeague: string) {
+    const filteredLeagues = leagues.filter((league) => league.name === selectLeague);
+    console.log("Filtering Leagues:", { filteredLeagues })
+    const allPlayersInLeague = filteredLeagues.flatMap((leagues) => leagues.teams.flatMap(({ players }) => players));
+    return allPlayersInLeague;
+  }
+  const typedLeagueData = leagueData as League[];
+  const testResult = findPlayersByLeague(typedLeagueData, "Grand Rapids");
+  console.log("Final result:", testResult);
+
   const leagueNames = extractLeagueNames(leagueData as League[]);
 
   return (
@@ -47,9 +57,10 @@ function App() {
       <h1>Pool League Standings</h1>
       <div className="card">
         <form
-          onSubmit={(e: React.FormEvent<HTMLFormElement>) => {
+          onSubmit={(e) => {
             e.preventDefault();
             setTeams(findTeamsByLeagueName(leagueData as League[], selectedLeague));
+            setPlayers(findPlayersByLeague(leagueData as League[], selectedLeague)); // Add this line
           }}
         >
           <select
@@ -76,10 +87,18 @@ function App() {
       </div>
       <div className="container">
         <div className="teams-list">
+          <button
+            className="rounded bg-secondary m-1 p-1 hover:bg-green-100 hover:text-secondary text-slate-400"
+            onClick={() => {
+              setPlayers(findPlayersByLeague(leagueData as League[], selectedLeague));
+            }}
+          >
+            Show All League Players
+          </button>
           <h2>Teams</h2>
           <ul>
             {teams.length > 0 ? (
-              teams.map((team: string, index: number) => (
+              teams.map((team, index) => (
                 <li
                   key={index}
                   onClick={() => setPlayers(findPlayersByTeamName(leagueData as League[], team))}
@@ -93,6 +112,7 @@ function App() {
           </ul>
         </div>
         <div className="players-table">
+          <h2> </h2>
           <h2>Players</h2>
           {players.length > 0 ? (
             <table>

@@ -58,8 +58,11 @@ li {
 .container {
   display: flex;
   gap: 2rem;
-  justify-content: flex-start;
+  justify-content: space-between;
   padding: 20px;
+  width: 100%;
+  max-width: 1400px; /* Prevent excessive stretching on very wide screens */
+  margin: 0 auto;
 }
 
 /* Teams list section */
@@ -91,13 +94,21 @@ li {
 
 /* Players table section */
 .players-table {
-  width: 500px;
+  min-width: 800px; 
+  max-width: 1200px; 
+  flex: 2;
   overflow-x: auto;
 }
 
 .players-table table {
-  width: 100%;
+  width: 600px;
   border-collapse: collapse;
+}
+
+.players-table h2 {
+  width: 600px;
+  text-align: center;
+  margin: 0 0 1rem 0;
 }
 
 .players-table th,
@@ -105,6 +116,20 @@ li {
   border: 1px solid #ddd;
   padding: 8px;
   text-align: center;
+  white-space: nowrap;
+}
+
+/* Make name column expand based on content */
+.players-table th:first-child,
+.players-table td:first-child {
+  text-align: center;
+  padding-right: 0px; /* Give some breathing room */
+}
+
+/* Keep numeric columns compact */
+.players-table th:not(:first-child),
+.players-table td:not(:first-child) {
+  padding: 12px;
 }
 
 .players-table th {

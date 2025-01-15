@@ -68,8 +68,8 @@
                 {
                     "id": 1004,
                     "icon": "path/to/icon",
-                    "firstName": "ERIC",
-                    "lastName": "LOCKEN",
+                    "firstName": "Eric",
+                    "lastName": "Locken",
                     "role": "Primary",
                     "stats": [
                         {
