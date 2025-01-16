@@ -1,11 +1,14 @@
 import React, { useState } from 'react'
-import { League, Team, Player } from './interfaces';
+import { League } from './data/league'
+import { Team } from './data/teams'
+import { Player } from './data/players'
 import grLogo from './assets/GrandRapids.png'
 import hLogo from './assets/Hibbing.png'
 import './App.css'
 import leagueData from "./leagueData.json"
 import './index.css'
-
+import { Typography } from '@mui/material';
+import { LeagueForm } from './components/LeagueForm'
 
 function App() {
   const [selectedLeague, setSelectedLeague] = useState<string>("");
@@ -16,15 +19,6 @@ function App() {
     const leagueNames = leagues.map(({ name }) => name);
     console.log("League Names", leagueNames);
     return leagueNames;
-  }
-
-  function findTeamsByLeagueName(leagues: League[], selectLeague: string): string[] {
-    const filteredLeagues = leagues.filter((league) => league.name === selectLeague);
-    const filteredTeamNames = filteredLeagues.flatMap((league) =>
-      league.teams.map(({ teamName }) => teamName)
-    );
-    console.log("Team Names:", filteredTeamNames);
-    return filteredTeamNames;
   }
 
   function findPlayersByTeamName(leagues: League[], selectedTeam: string): Player[] {
@@ -54,37 +48,16 @@ function App() {
 
   return (
     <>
-      <h1>Pool League Standings</h1>
-      <div className="card">
-        <form
-          onSubmit={(e) => {
-            e.preventDefault();
-            setTeams(findTeamsByLeagueName(leagueData as League[], selectedLeague));
-            setPlayers(findPlayersByLeague(leagueData as League[], selectedLeague)); // Add this line
-          }}
-        >
-          <select
-            className="rounded p-1 bg-secondary text-white"
-            value={selectedLeague}
-            onChange={(e: React.ChangeEvent<HTMLSelectElement>) =>
-              setSelectedLeague(e.target.value)
-            }
-          >
-            <option value="">Select a League</option>
-            {leagueNames.map((leagueName: string, index: number) => (
-              <option key={index} value={leagueName}>
-                {leagueName}
-              </option>
-            ))}
-          </select>
-
-          <input
-            className="rounded bg-secondary m-1 p-1 hover:bg-green-100 hover:text-secondary text-slate-400"
-            type="submit"
-            value="Show Teams"
-          />
-        </form>
-      </div>
+      <Typography variant="h3" component="h1">Pool League Standings </Typography>
+      <LeagueForm
+          setTeams = {setTeams}
+          setPlayers = {setPlayers}
+          selectedLeague = {selectedLeague}
+          setSelectedLeague = {setSelectedLeague}
+          findPlayersByLeague = {findPlayersByLeague}
+          leagueNames = {leagueNames}
+          leagueData = {leagueData}
+      />
       <div className="container">
         <div className="teams-list">
           <button
