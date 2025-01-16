@@ -1,14 +1,15 @@
 import React, { useState } from 'react'
-import { League } from './data/league'
-import { Team } from './data/teams'
-import { Player } from './data/players'
+import { League } from './interfaces/league'
+import { Team } from './interfaces/teams'
+import { Player } from './interfaces/players'
 import grLogo from './assets/GrandRapids.png'
 import hLogo from './assets/Hibbing.png'
 import './App.css'
-import leagueData from "./leagueData.json"
+import leagueData from "./data/leagueData.json"
 import './index.css'
-import { Typography } from '@mui/material';
+import { Typography, Button, List, ListItem, ThemeProvider } from '@mui/material';
 import { LeagueForm } from './components/LeagueForm'
+import { theme } from './themes';
 
 function App() {
   const [selectedLeague, setSelectedLeague] = useState<string>("");
@@ -47,77 +48,98 @@ function App() {
   const leagueNames = extractLeagueNames(leagueData as League[]);
 
   return (
-    <>
-      <Typography variant="h3" component="h1">Pool League Standings </Typography>
-      <LeagueForm
-          setTeams = {setTeams}
-          setPlayers = {setPlayers}
-          selectedLeague = {selectedLeague}
-          setSelectedLeague = {setSelectedLeague}
-          findPlayersByLeague = {findPlayersByLeague}
-          leagueNames = {leagueNames}
-          leagueData = {leagueData}
-      />
-      <div className="container">
-        <div className="teams-list">
-          <button
-            className="rounded bg-secondary m-1 p-1 hover:bg-green-100 hover:text-secondary text-slate-400"
-            onClick={() => {
-              setPlayers(findPlayersByLeague(leagueData as League[], selectedLeague));
-            }}
-          >
-            Show All League Players
-          </button>
-          <h2>Teams</h2>
-          <ul>
-            {teams.length > 0 ? (
-              teams.map((team, index) => (
-                <li
-                  key={index}
-                  onClick={() => setPlayers(findPlayersByTeamName(leagueData as League[], team))}
-                >
-                  {team}
-                </li>
-              ))
-            ) : (
-              <p>No teams found for the selected league.</p>
-            )}
-          </ul>
-        </div>
-        <div className="players-table">
-          <h2>Players</h2>
-          {players.length > 0 ? (
-            <table>
-              <thead>
-                <tr>
-                  <th>Name</th>
-                  <th>Role</th>
-                  <th>Games</th>
-                  <th>Wins</th>
-                  <th>Avg Pts</th>
-                  <th>Total Pts</th>
-                </tr>
-              </thead>
-              <tbody>
-                {players.map((player: Player, index: number) => (
-                  <tr key={index}>
-                    <td>{player.firstName} {player.lastName}</td>
-                    <td>{player.role}</td>
-                    <td>{player.stats?.[0]?.games ?? 0}</td>
-                    <td>{player.stats?.[0]?.wins ?? 0}</td>
-                    <td>{player.stats?.[0]?.avgpts ?? 0}</td>
-                    <td>{player.stats?.[0]?.totalpts ?? 0}</td>
+    <ThemeProvider theme={theme}>
+      <>
+        <Typography variant="h3" component="h1">Pool League Standings </Typography>
+        <LeagueForm
+          setTeams={setTeams}
+          setPlayers={setPlayers}
+          selectedLeague={selectedLeague}
+          setSelectedLeague={setSelectedLeague}
+          findPlayersByLeague={findPlayersByLeague}
+          leagueNames={leagueNames}
+          leagueData={leagueData}
+        />
+        <div className="container">
+          <div className="teams-list">
+            <Button variant="outlined" sx={{ bgcolor: `primary.darker`, color: `primary.light` }}
+              onClick={() => {
+                setPlayers(findPlayersByLeague(leagueData as League[], selectedLeague));
+              }}
+            >
+              Show All League Players
+            </Button>
+            <h2>Teams</h2>
+            <List sx={{
+              width: '100%',
+              borderRadius: 1,
+              '& .MuiListItem-root': {
+                padding: 0,
+                mb: 1
+              }
+            }}>
+              {teams.length > 0 ? (
+                teams.map((team, index) => (
+                  <ListItem key={index} sx={{
+                    bgcolor: 'transparent'
+                  }}>
+                    <Button
+                      fullWidth
+                      variant="contained"
+                      sx={{
+                        bgcolor: 'primary.dark',
+                        color: 'common.white',
+                        '&:hover': {
+                          bgcolor: 'primary.light',
+                          color: 'primary.darker'
+                        }
 
+                      }}
+                      onClick={() => setPlayers(findPlayersByTeamName(leagueData as League[], team))}>
+                      {team}
+                    </Button>
+                  </ListItem>
+                ))
+              ) : (
+                <p>No teams found for the selected league.</p>
+              )}
+            </List>
+          </div>
+          <div className="players-table">
+            <h2>Players</h2>
+            {players.length > 0 ? (
+              <table>
+                <thead>
+                  <tr>
+                    <th>Name</th>
+                    <th>Role</th>
+                    <th>Games</th>
+                    <th>Wins</th>
+                    <th>Avg Pts</th>
+                    <th>Total Pts</th>
                   </tr>
-                ))}
-              </tbody>
-            </table>
-          ) : (
-            <p>No players available for the selected team.</p>
-          )}
+                </thead>
+                <tbody>
+                  {players.map((player: Player, index: number) => (
+                    <tr key={index}>
+                      <td>{player.firstName} {player.lastName}</td>
+                      <td>{player.role}</td>
+                      <td>{player.stats?.[0]?.games ?? 0}</td>
+                      <td>{player.stats?.[0]?.wins ?? 0}</td>
+                      <td>{player.stats?.[0]?.avgpts ?? 0}</td>
+                      <td>{player.stats?.[0]?.totalpts ?? 0}</td>
+
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            ) : (
+              <p>No players available for the selected team.</p>
+            )}
+          </div>
         </div>
-      </div>
-    </>
+      </>
+    </ThemeProvider>
   );
 }
 

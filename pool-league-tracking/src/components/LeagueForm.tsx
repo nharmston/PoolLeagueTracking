@@ -1,6 +1,6 @@
-import leagueData from "../leagueData.json";
-import { League }  from "../data/league";
-import { Player } from "../data/players"
+import leagueData from "../data/leagueData.json";
+import { League }  from "../interfaces/league";
+import { Player } from "../interfaces/players"
 import React from "react";
 import '../App.css'
 
